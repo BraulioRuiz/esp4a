@@ -1,0 +1,43 @@
+<!-- <mat-card class="tarjetaLogin">
+  <div class="form-container">
+    <h1 class="title">Tup's</h1>
+    <mat-form-field>
+      
+      <input id="email"
+      matInput placeholder="Correo Electronico"     
+      >
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Contraseña" type="password" class="password">
+           <mat-icon matSuffix (click)="hide = !hide">
+            {{hide ? 'visibility' : 'visibility_off'}}
+          </mat-icon> 
+    </mat-form-field>
+    <button 
+      mat-button type="submit" 
+      class="mat-raised-button mat-primary" 
+      [disabled]="!loginForm.valid">Login
+    </button>
+     <h2 class="textforgotpass">¿Olvidaste tu contraseña?</h2>
+    <div>
+        <button mat-button class="btoLogin" > Crear cuenta</button>    
+    </div> 
+    
+  </div>
+</mat-card> -->
+
+<mat-card class="rectangle">
+  <div class="form-container">
+      <mat-form-field>
+          <label class="labels">Usuario</label>
+          <input type="text" class="textfield1">         
+      </mat-form-field>   
+      <mat-form-field>
+          <label class="labels">Contraseña</label>
+          <input type="text" class="textfield1">    
+      </mat-form-field>
+      <button class="botonLogin">Iniciar</button>
+      <label for="" class="olvidastetuContrasea">Olvidaste tu Contraseña?</label>
+  </div> 
+
+</mat-card>

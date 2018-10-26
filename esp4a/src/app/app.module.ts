@@ -13,6 +13,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
 import { EspService } from '../services/esp.service';
+import { LoginComponent } from './login/login.component';
+import { GraficaComponent } from './grafica/grafica.component';
 
 const config = {
   apiKey: "AIzaSyCUYMj_J04yZseGq0tdgCs7RHMSHTMwng8",
@@ -26,7 +28,9 @@ const config = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    GraficaComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,7 @@ const config = {
     AngularFireDatabaseModule,
   ],
   providers: [EspService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+ 
 })
 export class AppModule { }
